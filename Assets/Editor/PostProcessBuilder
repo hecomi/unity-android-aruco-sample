@@ -1,0 +1,6 @@
+﻿adb shell mkdir /sdcard/AndroidOpenCvSample
+ls -1 ../../Assets/StreamingAssets/ | \
+	grep -v .meta | \
+	xargs -ILOCALFILE \
+		adb push ../../Assets/StreamingAssets/LOCALFILE /sdcard/AndroidOpenCvSample/
+
